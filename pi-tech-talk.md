@@ -26,16 +26,34 @@ Choose any model with /model, or hit Ctrl-p to bop between the 2/3 you use a lot
 ---
 # It's All About The Context (Window!)
 
-If you look at the [Github Copilot CLI System
-Prompt](https://github.com/asgeirtj/system_prompts_leaks/blob/main/Misc/copilot-cli.md) you'll
-see it's positively massive!
+![Meme from the movie Aladdin showing Genie and Lamp](./images/IttyBittyLivingSpace.jpg)
 
-It contains 2978 lines, 56491 words, and 698106 bytes all crammed into your context window
-before you even start!
+---
+# Drive By System Prompt Size Comparison
 
-Here's [Pi's default system
-prompt](https://github.com/earendil-works/pi/blob/main/packages/coding-agent/src/core/system-prompt.ts#L132) by
-comparison!
+If you look at the [Github Copilot CLI System Prompt](https://github.com/asgeirtj/system_prompts_leaks/blob/main/Misc/copilot-cli.md) you'll see it's positively massive!
+
+It contains 2978 lines, 56491 words, and 698106 bytes all crammed into your context window before you even start!
+
+Here's [Pi's default system prompt](https://github.com/earendil-works/pi/blob/main/packages/coding-agent/src/core/system-prompt.ts#L132) by comparison!
+
+---
+# Engineers, Start Your Harnesses!
+
+I did a bit of informal benchmarking and found:
+
+Pi's context footprint is ~5–9× smaller than Claude Code's:
+- Trivial prompt (pong): pi sends ~4.1K cached tokens vs. claude's ~19.6K (4.7×)
+- Tool-using prompt (ls + summarize): pi sends ~4.5K vs. claude's ~39.2K (8.7×)
+
+That means *more useful work* per round trip to the LLM with Pi than with Claude Code.
+
+---
+# A Fast Growing Ecosystem
+
+There are *so* many pi extensions others have built!
+
+[Explore liberally](https://pi.dev/packages), adopt cautiously! :)
 
 ---
 # Pi's Secret Sauce - Self Extension
@@ -48,3 +66,12 @@ A trivial example:
 # Now Let's Integrate With An External Service - Sentry
 
 **Demo where we install Sentry MCP and use it to search for exceptions**
+
+---
+# One Last Demo Before You Go!
+
+Watch me pull a rabbit out of this hat!
+
+**We'll use pi to implement the solution to a Github issue and create a pull request for the fix.**
+
+---

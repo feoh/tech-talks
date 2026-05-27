@@ -1,0 +1,5 @@
+group	harness	model	prompt_id	run	wall_sec	input_tokens	cache_read	output_tokens	total_tokens	stop_reason
+claude	pi	github-copilot/claude-sonnet-4.5	p0-r1	2.196	3	3795	5	4131	stop
+claude	claude	sonnet	p0-r1	2.440	3	12992	5	NA	end_turn
+claude	pi	github-copilot/claude-sonnet-4.5	p1-r1	7.596	6	4368	106	7792	stop
+claude	claude	sonnet	p1-r1	6.589	4	32586	195	NA	end_turn
