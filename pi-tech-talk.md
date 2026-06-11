@@ -49,6 +49,11 @@ Pi's context footprint is ~5–9× smaller than Claude Code's:
 That means *more useful work* per round trip to the LLM with Pi than with Claude Code.
 
 ---
+# Sessions!
+
+Check out all the [powerful](https://pi.dev/docs/latest/sessions) ways Pi lets you manipulate your conversation path with the LLM!
+
+---
 # A Fast Growing Ecosystem
 
 There are *so* many pi extensions others have built!
@@ -68,10 +73,8 @@ A trivial example:
 **Demo where we install Sentry MCP and use it to search for exceptions**
 
 ---
-# One Last Demo Before You Go!
+# Anthropic Shenanigans
 
-Watch me pull a rabbit out of this hat!
-
-**We'll use pi to implement the solution to a Github issue and create a pull request for the fix.**
-
+If you want to multi-model with Claude, use [pi-claude-bridge](https://github.com/elidickinson/pi-claude-bridge).
 ---
+
