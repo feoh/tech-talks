@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1020" viewBox="0 0 1600 1020" role="img" aria-labelledby="title desc">
+  <title id="title">End-to-end end user journey testing flow</title>
+  <desc id="desc">A flow diagram covering site login, landing-screen validation, course selection and enrollment, and a neural networks course search.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 38px Arial, sans-serif; fill: #102a43; }
+      .subtitle { font: 400 18px Arial, sans-serif; fill: #486581; }
+      .phase { font: 700 16px Arial, sans-serif; fill: #ffffff; letter-spacing: 1px; }
+      .box-title { font: 700 22px Arial, sans-serif; fill: #102a43; }
+      .box-text { font: 400 18px Arial, sans-serif; fill: #334e68; }
+      .decision { font: 700 18px Arial, sans-serif; fill: #102a43; }
+      .label { font: 700 15px Arial, sans-serif; fill: #243b53; }
+      .yes { fill: #d9f7e8; stroke: #159570; }
+      .no { fill: #ffe3e3; stroke: #d64545; }
+      .node { fill: #ffffff; stroke: #9fb3c8; }
+      .check { fill: #f0f7ff; stroke: #3b82c4; }
+      .course { fill: #f5f3ff; stroke: #7757c6; }
+      .search { fill: #fff7df; stroke: #d99c16; }
+      .line { fill: none; stroke: #526d82; stroke-width: 3; marker-end: url(#arrow); }
+      .dash { fill: none; stroke: #d64545; stroke-width: 3; stroke-dasharray: 8 8; marker-end: url(#arrow-red); }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#526d82"/></marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#d64545"/></marker>
+  </defs>
+  <rect class="bg" width="1600" height="1020" rx="24"/>
+  <text class="title" x="80" y="78">End-to-End End User Journey Testing</text>
+  <text class="subtitle" x="80" y="112">Validate the critical learner path from sign-in through course discovery and enrollment.</text>
+
+  <rect x="80" y="155" width="1440" height="48" rx="12" fill="#1f5f99"/><text class="phase" x="110" y="186">PHASE 1 · AUTHENTICATE &amp; LAND</text>
+  <rect class="node" x="105" y="245" width="260" height="92" rx="16" stroke-width="2"/><text class="box-title" x="135" y="280">Site login</text><text class="box-text" x="135" y="310">Enter learner credentials</text>
+  <path class="line" d="M365 291 H465"/>
+  <polygon class="check" points="570,227 675,291 570,355 465,291" stroke-width="2"/><text class="decision" x="525" y="286">Login</text><text class="decision" x="526" y="309">successful?</text>
+  <path class="line" d="M675 291 H770"/><text class="label" x="709" y="276">YES</text>
+  <rect class="check" x="770" y="245" width="350" height="92" rx="16" stroke-width="2"/><text class="box-title" x="800" y="280">Validate landing screen</text><text class="box-text" x="800" y="310">Does the landing screen look right?</text>
+  <path class="dash" d="M570 355 V400 H235 V337"/><text class="label" x="395" y="390" fill="#d64545">NO · report and retry</text>
+
+  <rect x="80" y="455" width="1440" height="48" rx="12" fill="#6545a2"/><text class="phase" x="110" y="486">PHASE 2 · EXPLORE &amp; ENROLL</text>
+  <path class="line" d="M945 337 V550 H365"/>
+  <rect class="course" x="105" y="550" width="260" height="100" rx="16" stroke-width="2"/><text class="box-title" x="135" y="584">Open first course</text><text class="box-text" x="135" y="614">Click “Top picks for you”</text>
+  <path class="line" d="M365 600 H455"/>
+  <rect class="course" x="455" y="550" width="295" height="100" rx="16" stroke-width="2"/><text class="box-title" x="485" y="584">Check course page</text><text class="box-text" x="485" y="614">Is the page fully formed?</text>
+  <path class="line" d="M750 600 H840"/>
+  <rect class="course" x="840" y="550" width="295" height="100" rx="16" stroke-width="2"/><text class="box-title" x="870" y="584">Enroll in course</text><text class="box-text" x="870" y="614">Can we enroll?</text>
+  <path class="dash" d="M602 650 V695 H300 V650"/><text class="label" x="376" y="686" fill="#d64545">NO · report defect</text>
+  <path class="dash" d="M988 650 V695 H602"/>
+
+  <rect x="80" y="750" width="1440" height="48" rx="12" fill="#b7791f"/><text class="phase" x="110" y="781">PHASE 3 · SEARCH</text>
+  <path class="line" d="M988 650 V850 H365"/>
+  <rect class="search" x="105" y="850" width="260" height="94" rx="16" stroke-width="2"/><text class="box-title" x="135" y="886">Course search</text><text class="box-text" x="135" y="916">Open search</text>
+  <path class="line" d="M365 897 H465"/>
+  <rect class="search" x="465" y="850" width="335" height="94" rx="16" stroke-width="2"/><text class="box-title" x="495" y="886">Run example query</text><text class="box-text" x="495" y="916">Search for “neural networks”</text>
+  <path class="line" d="M800 897 H900"/>
+  <rect class="search" x="900" y="850" width="330" height="94" rx="16" stroke-width="2"/><text class="box-title" x="930" y="886">Validate results</text><text class="box-text" x="930" y="916">Relevant results are returned</text>
+  <circle cx="1335" cy="897" r="42" fill="#159570"/><path d="M1316 898 l13 13 26 -30" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><text class="label" x="1281" y="964">Journey complete</text>
+</svg>
