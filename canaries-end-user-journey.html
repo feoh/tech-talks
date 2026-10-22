@@ -18,17 +18,17 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" lang="en-US">
 <h1 id="whats-in-a-name-why-canary-1">What's in a name? Why &quot;canary&quot;?</h1>
-<p>Back in the bad old days of coal mining, the legend goes that miners would bring canaries down into the mines with them. One of the hazards of that job is invisible pockets of poison gas that could suffocate miners before they knew what had befallen them. A canary, being much smaller than a human, keels over after a much smaller dose of the gas, and thus served as a grisly but life-saving device helping miners avoid peril.</p>
-<p>While we're lucky in that we don't need to fear death by poison gas, running the incredibly complex systems we're building today has plenty of peril all their own, and canaries can help!</p>
+<p>Back in the old days of coal mining, miners would bring canaries down into the mines with them. One of the hazards of that job is invisible pockets of poison gas that could suffocate miners before they knew what had befallen them. A canary, being much smaller than a human, would keel over after a much smaller dose of the gas, and thus served as a grisly but life-saving device helping miners avoid peril.</p>
+<p>&quot;Canaries&quot; can also help us avoid perils brought on by the complexity of the systems we build!</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section lang="en-US" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:40%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./images/CanaryLearnSearch.png&quot;);"><figcaption>Canary Doing a Search On MIT Learn</figcaption></figure></div></section></foreignObject><foreignObject width="60%" height="720"><section id="4" lang="en-US" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:40%;">
-<h1 id="canaries-are-programs-that-act-like-end-users-doing-things-users-do">Canaries Are Programs That Act Like End Users Doing Things Users Do</h1>
+<h1 id="canaries-are-programs-that-act-like-end-users">Canaries Are Programs That Act Like End Users</h1>
 
 <p>Much like any other kind of testing, we need to be checking in both directions. From the inside out (unit tests, infrastructure monitoring and alerting, etc.) and from the outside in! Canaries give us that super power.</p>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section lang="en-US" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right" style=""></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" lang="en-US">
 <h1 id="end-to-end-user-journey-testing">End To End User Journey Testing</h1>
-<p>There are many ways in which we can leverage canaries to help us ship more confidently, but for the initial wave, we're using them for end to end &quot;user journey&quot; testing.</p>
+<p>There are many ways in which we can leverage canaries to help us ship more confidently. Currently, we're using them for end to end user journey testing.</p>
 <p>Here's a diagram showing a simplified example of part of such a test for MIT Learn:</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" lang="en-US">
@@ -37,17 +37,17 @@
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" lang="en-US">
 <h1 id="what-we-have-today">What We Have Today</h1>
 <p>We currently implement our end to end user journey canary using a <a href="https://cicd.odl.mit.edu/teams/infrastructure/pipelines/canary-mit-learn">Concourse Pipeline</a>.</p>
-<p>We also maintain a <a href="https://github.com/mitodl/ol-infrastructure/blob/main/src/ol_concourse/pipelines/canaries/docs/journeys.md">Markdown document</a> that gives you a guided visual walkthrough of what the Canary is doing at each step. Let's take a brief spin through it!</p>
+<p>We also maintain a <a href="https://github.com/mitodl/ol-infrastructure/blob/main/src/ol_concourse/pipelines/canaries/docs/journeys.md">Markdown document</a> that gives you a guided visual walkthrough of what the canary is doing at each step. Let's take a brief spin through it!</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" lang="en-US">
 <h1 id="what-we-have-today-1">What We Have Today</h1>
-<p>The thing is, what we have is imperfect. It needs a knowledgeable human touch to really be the end to end user journey test we all need it to be! :)</p>
+<p>What we have is imperfect. It needs a knowledgeable human touch to make the end to end user journey test all we need it to be! :)</p>
 <p>The current set of journeys was derived from OTEL data showing the most common &quot;paths&quot; that users took through our application.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section lang="en-US" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:38%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./images/CanaryWantsYou.png&quot;);"><figcaption>Cartoon Canary Needs Your Help With User Journey Testing</figcaption></figure></div></section></foreignObject><foreignObject width="62%" height="720"><section id="9" lang="en-US" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:38%;">
 <h1 id="where-you-come-in">Where YOU Come In!</h1>
 
-<p>We need folks who really understand the product, its features and the way they come together to help signpost the best path our user testing journey should take.</p>
+<p>We need folks who really understand the product, its features and the way they come together to identify the best path for our user testing journey.</p>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section lang="en-US" data-marpit-advanced-background="pseudo" data-marpit-advanced-background-split="right" style=""></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section lang="en-US" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:45%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;./images/ProductionCanary.png&quot;);background-size:contain;"><figcaption>Doctor Canary Checking Up On MIT Learn Production</figcaption></figure></div></section></foreignObject><foreignObject width="55%" height="720"><section id="10" lang="en-US" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:45%;">
 <h1 id="the-future">The Future</h1>

@@ -14,12 +14,12 @@ marp: true
 ---
 # What's in a name? Why "canary"?
 
-Back in the bad old days of coal mining, the legend goes that miners would bring canaries down into the mines with them. One of the hazards of that job is invisible pockets of poison gas that could suffocate miners before they knew what had befallen them. A canary, being much smaller than a human, keels over after a much smaller dose of the gas, and thus served as a grisly but life-saving device helping miners avoid peril.
+Back in the old days of coal mining, miners would bring canaries down into the mines with them. One of the hazards of that job is invisible pockets of poison gas that could suffocate miners before they knew what had befallen them. A canary, being much smaller than a human, would keel over after a much smaller dose of the gas, and thus served as a grisly but life-saving device helping miners avoid peril.
 
-While we're lucky in that we don't need to fear death by poison gas, running the incredibly complex systems we're building today has plenty of peril all their own, and canaries can help!
+"Canaries" can also help us avoid perils brought on by the complexity of the systems we build!
 
 ---
-# Canaries Are Programs That Act Like End Users Doing Things Users Do
+# Canaries Are Programs That Act Like End Users
 
 ![bg right:40% Canary Doing a Search On MIT Learn](./images/CanaryLearnSearch.png)
 
@@ -28,7 +28,7 @@ Much like any other kind of testing, we need to be checking in both directions. 
 ---
 # End To End User Journey Testing
 
-There are many ways in which we can leverage canaries to help us ship more confidently, but for the initial wave, we're using them for end to end "user journey" testing.
+There are many ways in which we can leverage canaries to help us ship more confidently. Currently, we're using them for end to end user journey testing.
 
 Here's a diagram showing a simplified example of part of such a test for MIT Learn:
 
@@ -40,12 +40,12 @@ Here's a diagram showing a simplified example of part of such a test for MIT Lea
 
 We currently implement our end to end user journey canary using a [Concourse Pipeline](https://cicd.odl.mit.edu/teams/infrastructure/pipelines/canary-mit-learn).
 
-We also maintain a [Markdown document](https://github.com/mitodl/ol-infrastructure/blob/main/src/ol_concourse/pipelines/canaries/docs/journeys.md) that gives you a guided visual walkthrough of what the Canary is doing at each step. Let's take a brief spin through it!
+We also maintain a [Markdown document](https://github.com/mitodl/ol-infrastructure/blob/main/src/ol_concourse/pipelines/canaries/docs/journeys.md) that gives you a guided visual walkthrough of what the canary is doing at each step. Let's take a brief spin through it!
 
 ---
 # What We Have Today
 
-The thing is, what we have is imperfect. It needs a knowledgeable human touch to really be the end to end user journey test we all need it to be! :)
+What we have is imperfect. It needs a knowledgeable human touch to make the end to end user journey test all we need it to be! :)
 
 The current set of journeys was derived from OTEL data showing the most common "paths" that users took through our application.
 
@@ -54,7 +54,7 @@ The current set of journeys was derived from OTEL data showing the most common "
 
 ![bg right:38% Cartoon Canary Needs Your Help With User Journey Testing](./images/CanaryWantsYou.png)
 
-We need folks who really understand the product, its features and the way they come together to help signpost the best path our user testing journey should take.
+We need folks who really understand the product, its features and the way they come together to identify the best path for our user testing journey.
 
 ---
 # The Future
