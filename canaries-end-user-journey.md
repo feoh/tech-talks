@@ -1,10 +1,8 @@
-# It's All About The Canaries
-
-## Shipping With Confidence Through End User Testing
+# Canaries: Shipping With Confidence Through End User Testing
 
 ![Super Hero Flying Canary](./images/superhero-canary.png)
 
-## What's in a name? Why "canary"?
+# What's in a name? Why "canary"?
 
 Back in the bad old days of coal mining, the legend goes that miners would bring canaries down into the mines with them.
 One of the hazards of that job is invisible pockets of poison gas that could suffocate miners before they knew what had
@@ -14,14 +12,14 @@ served as a grisly but life saving device helping miners avoid peril.
 While we're lucky in that we don't need to fear death by poison gas, running the incredibly complex systems we're
 building today have plenty of peril all their own, and canaries can help!
 
-## Canaries Are Programs That Act Like End Users Doing Things Users Do
+# Canaries Are Programs That Act Like End Users Doing Things Users Do
 
 ![Canary Doing a Search On MIT Learn](./images/CanaryLearnSearch.png)
 
 Much like any other kind of testing, we need to be checking in both directions. From the inside out (unit tests,
 infrastructure monitoring and alerting, etc.) and from the outside in! Canaries give us that super power.
 
-## End To End User Journey Testing
+# End To End User Journey Testing
 
 There are many ways in which we can leverage canaries to help us ship more confidently, but for the initial wave, we're
 using them for end to end "user journey" testing.
@@ -30,7 +28,7 @@ Here's a diagram showing a simplified example of part of such a test for MIT Lea
 
 ![Example User Testing Flow Diagram](./images/EndUserJourneyTesting.svg)
 
-## What We Have Today
+# What We Have Today
 
 We currently impelemnt our end to end user journey canary using a [Concourse
 Pipeline](https://cicd.odl.mit.edu/teams/infrastructure/pipelines/canary-mit-learn).
@@ -45,13 +43,13 @@ test we all need it to be! :)
 The current set of journeys was derived from OTEL data showing the most common "paths" that users took through our
 application.
 
-## Where YOU Come In!
+# Where YOU Come In!
 ![Cartoon Canary Needs Your Help With User Journey Testing](./images/CanaryWantsYou.png)
 
 We need folks who really understand the product, its features and the way they come together to help signpost the best
 path our user testing journey should take.
 
-## The Future
+# The Future
 ![Doctor Canary Checking Up On MIT Learn Production](./images/ProductionCanary.png)
 
 Right now, we're just using canaries in RC to run checks on our pre-production environment.
