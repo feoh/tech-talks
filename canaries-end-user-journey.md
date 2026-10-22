@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Canaries: Shipping With Confidence Through End User Testing
 
 ![Super Hero Flying Canary](./images/superhero-canary.png)
